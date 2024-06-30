@@ -24,40 +24,13 @@ header {
   display: flex;
 }
 
-.user {
-  position: absolute;
-  width: 120px;
-  height: 30px;
-  right: 0px;
-  top: 9px;
-  background: url(assets/user.png);
-  background-repeat: no-repeat;
-  background-position: 60px;
-  display: flex;
-  align-items: center;
-}
-
-.user span {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  color: #FFFFFF;
-  margin: 0px 2px;
-}
-
 .banner {
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
-  top: 47px;
-  left: 0px;
   text-align: center;
   box-sizing: border-box;
-  background-color: #FFD621;
-  margin-bottom: 50px;
-  border-bottom: 47px solid white;
+  background-color: #000000;
 }
 
 .banner img {
@@ -111,11 +84,62 @@ header {
 }
 
 footer {
-  background-color: #FFD621;
-  height: 47px;
+  border-top: 5px solid rgb(65, 65, 65);
+  background-color: #000000;
+  position:absolute;
+  bottom:0;
+}
+
+/* Relativos à pagina main */
+
+.main-athletes {
+  background-color: #000000;
+  padding: 7px;
+}
+
+#home-search-bar{
+  padding-bottom: 7px;
 }
 
 /* Parte relativa a cada item */
+
+.container-add-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(100, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-bar {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 10px;
+  background: #f6f6f6;
+}
+
+.search-input {
+  width: max-content;
+  font-size: 14px;
+}
+
+.submit-bar {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 10px;
+  background: #f6f6f6;
+}
+
+.submit-input {
+  width: max-content;
+  font-size: 14px;
+}
+
 
 .product {
     width: 240px;
@@ -165,6 +189,29 @@ footer {
     border-radius: 100px;
 }
 
+.input-wrapper {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
 .quantity span {
     font-style: normal;
     font-weight: 700;
@@ -205,4 +252,10 @@ footer {
     }
 }
 
-
+.item-name {
+  background-color: rgba(100, 0, 0, 0.485);
+  border: 2px solid #3e0000;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  color: #EAEAEA;
+}

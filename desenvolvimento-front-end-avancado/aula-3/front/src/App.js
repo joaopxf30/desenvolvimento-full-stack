@@ -1,9 +1,18 @@
-import Products from './pages/Products'
+import Home from "./pages/Home"
+import Esportista from "./pages/Esportista"
+import Treino from "./pages/Treino"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 export default function App() {
   return (
     <div>
-      <Products />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/esportista/:id" element={<Esportista/>}></Route>
+          {/* <Route path="/treino" elemetn={<Treino/>}></Route> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
